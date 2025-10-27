@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peer Support Checklist Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"], textarea {
+        padding: 8px;
+        margin-top: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .submit-btn {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #0078D7;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    .confirmation {
+        display: none;
+        margin-top: 20px;
+        color: green;
+        font-weight: bold;
+        text-align: center;
+    }
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+        .submit-btn {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Peer Support Checklist</h2>
+<form id="peerSupportForm" action="https://formspree.io/f/mnqekjqd" method="POST">
+    <label for="participantName">Participant Name:</label>
+    <input type="text" id="participantName" name="participantName" required>
+
+    <label for="peerSpecialist">Peer Support Specialist:</label>
+    <input type="text" id="peerSpecialist" name="peerSpecialist" required>
+
+    <label for="dateOfService">Date of Service:</label>
+    <input type="text" id="dateOfService" name="dateOfService" required>
+
+    <label for="email">Participant Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Interventions Used During Session:</label>
+    <div class="checkbox-group">
+<label><input type="checkbox" name="interventions" value="Initial engagement with participant following transition from hospital, correctional, or institutional setting"> Initial engagement with participant following transition from hospital, correctional, or institutional setting</label>
+<label><input type="checkbox" name="interventions" value="Provided transition support to help participant reintegrate into community living"> Provided transition support to help participant reintegrate into community living</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in connecting with natural supports (family, friends, peers)"> Assisted participant in connecting with natural supports (family, friends, peers)</label>
+<label><input type="checkbox" name="interventions" value="Followed up on transition goals to ensure stability in housing and community"> Followed up on transition goals to ensure stability in housing and community</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in accessing immediate recovery-oriented resources during transition"> Supported participant in accessing immediate recovery-oriented resources during transition</label>
+<label><input type="checkbox" name="interventions" value="Modeled recovery-oriented behaviors and coping strategies"> Modeled recovery-oriented behaviors and coping strategies</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in understanding the person-centered planning process"> Assisted participant in understanding the person-centered planning process</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in setting and articulating personal recovery goals"> Supported participant in setting and articulating personal recovery goals</label>
+<label><input type="checkbox" name="interventions" value="Shared lived experience and resiliency story to promote hope and motivation"> Shared lived experience and resiliency story to promote hope and motivation</label>
+<label><input type="checkbox" name="interventions" value="Provided reassurance, encouragement, and peer-based advocacy"> Provided reassurance, encouragement, and peer-based advocacy</label>
+<label><input type="checkbox" name="interventions" value="Promoted self-determination and empowerment in decision-making"> Promoted self-determination and empowerment in decision-making</label>
+<label><input type="checkbox" name="interventions" value="Coached participant on effective engagement in treatment and recovery services"> Coached participant on effective engagement in treatment and recovery services</label>
+<label><input type="checkbox" name="interventions" value="Shared recovery experiences to support development of participant self-advocacy"> Shared recovery experiences to support development of participant self-advocacy</label>
+<label><input type="checkbox" name="interventions" value="Served as mentor/facilitator to resolve participant’s concerns or barriers"> Served as mentor/facilitator to resolve participant’s concerns or barriers</label>
+<label><input type="checkbox" name="interventions" value="Guided participant in navigating behavioral health, housing, and social service systems"> Guided participant in navigating behavioral health, housing, and social service systems</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in shared decision-making about treatment and recovery plans"> Supported participant in shared decision-making about treatment and recovery plans</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in creating or reviewing mental health advance directives"> Assisted participant in creating or reviewing mental health advance directives</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in building communication skills with clinicians/providers"> Supported participant in building communication skills with clinicians/providers</label>
+<label><input type="checkbox" name="interventions" value="Advocated with/for participant to obtain reasonable ADA accommodations"> Advocated with/for participant to obtain reasonable ADA accommodations</label>
+<label><input type="checkbox" name="interventions" value="Coached participant in identifying and pursuing needed services and benefits"> Coached participant in identifying and pursuing needed services and benefits</label>
+<label><input type="checkbox" name="interventions" value="Supported development of coping skills for psychiatric symptoms"> Supported development of coping skills for psychiatric symptoms</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in building trauma-informed coping strategies"> Assisted participant in building trauma-informed coping strategies</label>
+<label><input type="checkbox" name="interventions" value="Coached participant on strategies for substance use recovery and relapse prevention"> Coached participant on strategies for substance use recovery and relapse prevention</label>
+<label><input type="checkbox" name="interventions" value="Guided participant in creating daily structure and healthy routines"> Guided participant in creating daily structure and healthy routines</label>
+<label><input type="checkbox" name="interventions" value="Provided health and wellness education (nutrition, exercise, preventive care)"> Provided health and wellness education (nutrition, exercise, preventive care)</label>
+<label><input type="checkbox" name="interventions" value="Supported resiliency skill-building for long-term recovery"> Supported resiliency skill-building for long-term recovery</label>
+<label><input type="checkbox" name="interventions" value="Taught problem-solving and goal-setting strategies"> Taught problem-solving and goal-setting strategies</label>
+<label><input type="checkbox" name="interventions" value="Promoted integration of physical and behavioral health care practices"> Promoted integration of physical and behavioral health care practices</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in developing independent living and community functioning skills"> Assisted participant in developing independent living and community functioning skills</label>
+<label><input type="checkbox" name="interventions" value="Connected participant with local peer recovery groups and mutual support networks"> Connected participant with local peer recovery groups and mutual support networks</label>
+<label><input type="checkbox" name="interventions" value="Linked participant to cultural, social, or spiritual community activities"> Linked participant to cultural, social, or spiritual community activities</label>
+<label><input type="checkbox" name="interventions" value="Accompanied participant to medical, recovery, or social service appointments"> Accompanied participant to medical, recovery, or social service appointments</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in locating peer-run programs or interest-based groups"> Assisted participant in locating peer-run programs or interest-based groups</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in developing healthy social relationships to reduce isolation"> Supported participant in developing healthy social relationships to reduce isolation</label>
+<label><input type="checkbox" name="interventions" value="Helped participant build informal support networks (friends, mentors, peers)"> Helped participant build informal support networks (friends, mentors, peers)</label>
+<label><input type="checkbox" name="interventions" value="Encouraged participation in meaningful community roles (volunteering, clubs, advocacy)"> Encouraged participation in meaningful community roles (volunteering, clubs, advocacy)</label>
+<label><input type="checkbox" name="interventions" value="Linked participant to community resources that enhance independence and recovery"> Linked participant to community resources that enhance independence and recovery</label>
+<label><input type="checkbox" name="interventions" value="Provided emotional support during participant crisis"> Provided emotional support during participant crisis</label>
+<label><input type="checkbox" name="interventions" value="Assisted participant in developing/reviewing safety or crisis prevention plans"> Assisted participant in developing/reviewing safety or crisis prevention plans</label>
+<label><input type="checkbox" name="interventions" value="Linked participant to crisis services when appropriate"> Linked participant to crisis services when appropriate</label>
+<label><input type="checkbox" name="interventions" value="Helped participant recognize early warning signs of relapse or crisis"> Helped participant recognize early warning signs of relapse or crisis</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in practicing coping skills to de-escalate symptoms"> Supported participant in practicing coping skills to de-escalate symptoms</label>
+<label><input type="checkbox" name="interventions" value="Reinforced participant’s progress toward personal recovery goals"> Reinforced participant’s progress toward personal recovery goals</label>
+<label><input type="checkbox" name="interventions" value="Assisted with tracking recovery milestones and identifying next steps"> Assisted with tracking recovery milestones and identifying next steps</label>
+<label><input type="checkbox" name="interventions" value="Supported participant in relapse prevention planning"> Supported participant in relapse prevention planning</label>
+<label><input type="checkbox" name="interventions" value="Encouraged self-monitoring and self-care strategies for long-term wellness"> Encouraged self-monitoring and self-care strategies for long-term wellness</label>
+<label><input type="checkbox" name="interventions" value="Coached participant in sustaining motivation and hope in recovery journey"> Coached participant in sustaining motivation and hope in recovery journey</label>
+<label><input type="checkbox" name="interventions" value="Other Interventions: __________________________________________"> Other Interventions: __________________________________________</label>
+
+    </div>
+
+    <label for="narrative">Narrative:</label>
+    <textarea id="narrative" name="narrative" rows="4"></textarea>
+
+    <label for="response">Participant Response:</label>
+    <textarea id="response" name="response" rows="4"></textarea>
+
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+<div class="confirmation" id="confirmationMessage">Thank you! Your form has been submitted successfully.</div>
+</div>
+<script>
+document.getElementById('peerSupportForm').addEventListener('submit', function(event) {
+    var emailField = document.getElementById('email');
+    var emailValue = emailField.value;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailValue)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+        return false;
+    }
+    // Show confirmation message after submission
+    document.getElementById('confirmationMessage').style.display = 'block';
+});
+</script>
+</body>
+</html>
